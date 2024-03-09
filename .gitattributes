@@ -1,0 +1,4 @@
+# Ignore CSS files
+*.css linguist-detectable=false
+# Detect JavaScript files
+*.js linguist-detectable=true
