@@ -12,7 +12,6 @@ const Loader = () => {
       <div class="cloud back">
         <span class="left-back"></span>
         <span class="right-back"></span>
-          
       </div>
     </div>
   );

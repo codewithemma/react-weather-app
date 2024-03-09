@@ -73,40 +73,40 @@ const WeatherData = ({ weatherData }) => {
 
                   <div className="flex flex-col space-y-3 font-mono font-medium">
                     <p className="flex">
+                      <img
+                        src={windIcon}
+                        className="mr-1"
+                        alt="wind"
+                        width={"20px"}
+                      />
                       <span>
                         {weatherData.wind.speed}
                         <sub>mph</sub>
                       </span>
-                      <img
-                        src={windIcon}
-                        className="ml-1"
-                        alt="wind"
-                        width={"20px"}
-                      />
                     </p>
                     <p className="flex">
-                      <span>
-                        {weatherData.main.humidity}
-                        <sub>%</sub>
-                      </span>
                       <img
                         src={rainSvg}
                         alt="rain"
                         width={"20px"}
-                        className="ml-1"
+                        className="mr-1"
                       />
+                      <span>
+                        {weatherData.main.humidity}
+                        <sub>%</sub>
+                      </span>
                     </p>
                     <p className="flex">
-                      <span>
-                        {weatherData.main.pressure}
-                        <sub>atm</sub>
-                      </span>
                       <img
                         src={pressureSvg}
                         alt="air pressure"
                         width={"20px"}
-                        className="ml-1"
+                        className="mr-1"
                       />
+                      <span>
+                        {weatherData.main.pressure}
+                        <sub>atm</sub>
+                      </span>
                     </p>
                   </div>
                 </div>
