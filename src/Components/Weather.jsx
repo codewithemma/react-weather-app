@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import WeatherData from "./WeatherData";
 import Input from "./Input";
+import Loader from "./Loader";
 const Weather = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -41,7 +42,7 @@ const Weather = () => {
   };
 
   if (loading) {
-    return <div className="loader mx-auto my-10"></div>;
+    return <Loader />;
   }
 
   if (error) {
