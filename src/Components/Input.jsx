@@ -13,7 +13,7 @@ const Input = ({ handleChange, handleKeyDown, value }) => {
           required
         />
         <label
-          for="city"
+          htmlFor="city"
           className="absolute left-0 top-1 cursor-text peer-focus:text-xs peer-focus:-top-1 transition-all peer-focus:text-stone-700"
         >
           Enter a city

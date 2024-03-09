@@ -9,7 +9,7 @@ const CustomWeather = ({ weatherData }) => {
             Right now in <strong>Lagos</strong>, its partly cloudy.
           </p>
         </header>
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col sm:flex-row justify-between items-center mt-3">
           <img src={sunIcon} alt="Weather Icon" />
           <h1 className="text-8xl font-thin mx-auto">30°</h1>
           <div className="flex flex-col space-y-3 font-mono font-medium">
