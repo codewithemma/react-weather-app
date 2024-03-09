@@ -58,10 +58,7 @@ const WeatherData = ({ weatherData }) => {
                     <strong>{index.description}</strong>
                   </p>
                 </header>
-                <div
-                  key={index}
-                  className="flex flex-col sm:flex-row justify-between items-center mt-3"
-                >
+                <div className="flex flex-col sm:flex-row justify-between items-center mt-3">
                   <img
                     src={`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`}
                     alt="Weather Icon"
