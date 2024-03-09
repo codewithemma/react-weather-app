@@ -46,13 +46,22 @@ const Weather = () => {
 
   if (error) {
     return (
-      <div
-        class="p-4 mb-4 text-sm w-3/12 mx-auto mt-3 text-red-700 rounded-lg bg-blue-50"
-        role="alert"
-      >
-        <span class="font-medium">Info alert!</span> No result found!!. Enter a
-        valid city...
-      </div>
+      <>
+        <div>
+          <Input
+            handleChange={handleInputChange}
+            handleKeyDown={searchLocation}
+            value={location}
+          />
+        </div>
+        <div
+          class="p-4 mb-4 text-sm w-3/12 mx-auto mt-3 text-red-700 rounded-lg bg-blue-50"
+          role="alert"
+        >
+          <span class="font-medium">Info alert!</span> No result found!!. Enter
+          a valid city...
+        </div>
+      </>
     );
   }
   if (!data) {
