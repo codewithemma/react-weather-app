@@ -60,9 +60,8 @@ const WeatherData = ({ weatherData }) => {
                 </header>
                 <div className="flex flex-col sm:flex-row justify-between items-center mt-3">
                   <img
-                    src={`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`}
+                    src={`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`}
                     alt="Weather Icon"
-                    className="w-[100px] h-[100px] object-contain"
                   />
                   <h1 className="text-8xl font-thin mx-auto">
                     {weatherData.main.temp.toFixed()}°
